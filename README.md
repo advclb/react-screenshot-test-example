@@ -23,3 +23,6 @@ After you have made your change and run regular tests, do the following
 6. Commit and make PR. Attach image diff you have saved.
 
 [Example pull request](https://github.com/advclb/react-screenshot-test-example/pull/1)
+
+If you are able to configure pipline, these diffs can be automatically generated
+and attached into the PR.
