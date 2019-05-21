@@ -11,7 +11,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:integration": "jest"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,6 +27,17 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "jest-image-snapshot": "^2.8.2",
+    "jest-puppeteer": "^4.1.1",
+    "puppeteer": "^1.16.0"
+  },
+  "jest": {
+    "preset": "jest-puppeteer",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
     ]
   }
 }
